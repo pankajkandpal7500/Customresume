@@ -3,86 +3,63 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webcrumbs Plugin</title>
+    <title>Pankaj Kandpal | Portfolio</title>
     <style>
-      /* Your existing CSS styles */
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f2f4f8;
+      }
+
+      .container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 400px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 24px;
+        color: #1a73e8;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #333333;
+        margin-bottom: 20px;
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #1a73e8;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      a:hover {
+        background-color: #1558b0;
+      }
     </style>
   </head>
   <body>
-    <div id="webcrumbs"> 
-    	<div class="w-[900px] min-h-[600px] bg-neutral-50 rounded-lg shadow-lg p-8">
-    	  <header class="text-center mb-8">
-    	    <h1 class="text-4xl font-bold font-title text-primary">John Doe</h1>
-    	    <p class="text-xl">Front-End Developer</p>
-    	    <div class="flex justify-center space-x-4 mt-4">
-    	      <a href="https://www.linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer">
-    	        <i class="fa-brands fa-linkedin text-2xl"></i>
-    	      </a>
-    	      <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer">
-    	        <i class="fa-brands fa-github text-2xl"></i>
-    	      </a>
-    	      <a href="mailto:johndoe@example.com">
-    	        <i class="material-symbols-outlined text-2xl">mail</i>
-    	      </a>
-    	    </div>
-    	  </header>
-    	
-    	  <section class="mb-8">
-    	    <h2 class="text-2xl font-bold">Profile</h2>
-    	    <p class="mt-2">
-    	      Passionate and experienced Front-End Developer with a deep understanding of web technologies
-    	      and a knack for creating visually engaging and user-friendly web applications.
-    	    </p>
-    	  </section>
-
-    	  <section class="mb-8">
-    	    <h2 class="text-2xl font-bold">Power BI Report</h2>
-    	    <p class="mt-2">
-    	      <a href="https://app.powerbi.com/reportEmbed?reportId=0c28fd6e-8cb5-4724-a198-cb0eff8b36cb&autoAuth=true&ctid=46023072-dc54-427d-b259-d474de9dd0f8" target="_blank" rel="noopener noreferrer">View Power BI Report</a>
-    	    </p>
-    	  </section>
-    	
-    	  <section class="mb-8">
-    	    <h2 class="text-2xl font-bold">Experience</h2>
-    	    <div class="mt-4">
-    	      <div class="mb-4">
-    	        <h3 class="text-xl font-semibold">Front-End Developer at XYZ Corp</h3>
-    	        <p class="text-gray-600">Jan 2020 - Present</p>
-    	        <ul class="list-disc list-inside ml-6 mt-2">
-    	          <li>Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery.</li>
-    	          <li>Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness.</li>
-    	          <li>Clients included Macquarie, Scholastic, Lucent Technologies, and Duracell.</li>
-    	        </ul>
-    	      </div>
-    	      <div class="mb-4">
-    	        <h3 class="text-xl font-semibold">UI Developer at ABC Inc</h3>
-    	        <p class="text-gray-600">Jun 2017 - Dec 2019</p>
-    	        <ul class="list-disc list-inside ml-6 mt-2">
-    	          <li>Translated designs and wireframes into high-quality code</li>
-    	          <li>Built reusable components and front-end libraries</li>
-    	          <li>Optimized components for maximum performance across a vast array of web-capable devices and browsers</li>
-    	        </ul>
-    	      </div>
-    	    </div>
-    	  </section>
-    	  	  <section class="mb-8">
-    	    <h2 class="text-2xl font-bold">Power BI Report</h2>
-    	    <p class="mt-2">
-    	      <a href="https://app.powerbi.com/reportEmbed?reportId=0c28fd6e-8cb5-4724-a198-cb0eff8b36cb&autoAuth=true&ctid=46023072-dc54-427d-b259-d474de9dd0f8" target="_blank" rel="noopener noreferrer">View Power BI Report</a>
-    	    </p>
-    	  </section>
-    	  <section class="mb-8">
-    	    <h2 class="text-2xl font-bold">Education</h2>
-    	    <div class="mt-4">
-    	      <div>
-    	        <h3 class="text-xl font-semibold">B.Sc in Computer Science - University of Technology</h3>
-    	        <p class="text-gray-600">2013 - 2017</p>
-    	      </div>
-    	    </div>
-    	  </section>
-
-    	</div> 
+    <div class="container">
+      <h1>Pankaj Kandpal</h1>
+      <p>Welcome to my portfolio. Click below to view my Power BI report.</p>
+      <a href="https://app.powerbi.com/reportEmbed?reportId=0c28fd6e-8cb5-4724-a198-cb0eff8b36cb&autoAuth=true&ctid=46023072-dc54-427d-b259-d474de9dd0f8" target="_blank">View Power BI Report</a>
     </div>
-    
   </body>
 </html>
